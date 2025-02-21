@@ -42,7 +42,7 @@ def createDice(numberPassed):
         smallImageNumber = "smaller_image"+str(i)
 
         #load the image
-        globals()[imageNumber] = PhotoImage(master = window, file = "/Users/tuckerwalden/Desktop/Pyahtzee_Windows/dice/" + str(numberPassed)+".png")
+        globals()[imageNumber] = PhotoImage(master = window, file = "*INSERT FILE PATH*" + str(numberPassed)+".png")
         globals()[smallImageNumber] = globals()[imageNumber].subsample(8,8)
 
         #create a label to display the image
@@ -79,7 +79,7 @@ def rollDice():
         if globals()[diceNumber]['state'] !='disabled':
             
             # Load the image 
-            globals()[imageNumber] = PhotoImage(master = window,file="/Users/tuckerwalden/Desktop/Pyahtzee_Windows/dice/" +str(randomNumber)+".png")
+            globals()[imageNumber] = PhotoImage(master = window,file="*INSERT FILE PATH*" +str(randomNumber)+".png")
             globals()[smallImageNumber] = globals()[imageNumber].subsample(8,8)
             
         
